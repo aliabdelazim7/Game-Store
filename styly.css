@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.links a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background-color: #2386fe;
+}
+
+.btn {
+  background-color: #ee626b;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f2858c;
+}
+
+/* Main Section */
+main {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  border-radius: 0px 0px 55px 55px;
+  color: white;
+}
+
+.text {
+  width: 50%;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  outline: none;
+}
+
+.main-image-right img {
+  border-radius: 30px;
+  width: 450px;
+  height: auto;
+}
+
+/* Sections Styling */
+.trending-container,
+.new-releases-container,
+.popular-games-container {
+  padding: 25px 50px;
+}
+
+.trending-header,
+.new-releases-header,
+.popular-games-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-cards,
+.new-releases-cards,
+.popular-games-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-info h3 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-info p {
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.card-info img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 55px 55px 0px 0px;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.footer-title :hover {
+  color: tomato;
+  transition: 0.7s ease;
+  transform: scale(1.1);
+}
+
+.footer-title span {
+  color: #3a6cf4;
+}
+
+.footer .social-icons a {
+  font-size: 1.6em;
+  padding: 0 12px 0 0;
+  color: #3a6cf4;
+}
+
+.social-icons a:hover {
+  color: tomato;
+  transition: 0.7s ease;
+}

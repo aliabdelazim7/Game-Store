@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styly.css" />
+    <title>Lugx Store</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The best gaming store with trending games and great deals!"/>
+    <meta
+      name="keywords"
+      content="games, online store, trending games, best deals"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+<!-- Style -->
+
+<style>
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.links a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background-color: #2386fe;
+}
+
+.btn {
+  background-color: #ee626b;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f2858c;
+}
+
+/* Main Section */
+main {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  border-radius: 0px 0px 55px 55px;
+  color: white;
+}
+
+.text {
+  width: 50%;
+  font-weight: 700; 
+}
+
+.text p{
+  font-size: 1.2em;
+  font-weight: 500;
+
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  
+}
+
+.search-box input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  outline: none;
+}
+
+.main-image-right img {
+  border-radius: 30px;
+  width: 450px;
+  height: auto;
+}
+
+hr{
+  border: 1px double #4a7ebe;
+  padding: .15em ;
+  background-color: #4a7ebe;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 6px 7px 6px 5px rgba(0, 0, 0, 0.1);
+  box-sizing:border-box ;
+  position: center;
+}
+
+/* Sections Styling */
+.trending-container,
+.new-releases-container,
+.popular-games-container {
+  padding: 25px 50px;
+}
+.trending-header,
+.new-releases-header,
+.popular-games-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-cards,
+.new-releases-cards,
+.popular-games-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-info h3 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-info p {
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.card-info img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 55px 55px 0px 0px;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.footer-title :hover {
+  color: tomato;
+  transition: 0.7s ease;
+  transform: scale(1.1);
+}
+
+.footer-title span {
+  color: #3a6cf4;
+}
+
+.footer .social-icons a {
+  font-size: 1.6em;
+  padding: 0 12px 0 0;
+  color: #3a6cf4;
+}
+
+.social-icons a:hover {
+  color: tomato;
+  transition: 0.7s ease;
+}
+
+
+</style>
+
+
+<!-- Style -->
+
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="photos/logo.png" alt="Lugx Store Logo" />
+      </div>
+      <nav class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Products</a>
+        <button class="btn">SIGN IN</button>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="text">
+        <span>Welcome to LUGX</span>
+        <h2>BEST GAMING SITE EVER!</h2>
+        <p>
+          Lugx Store – Your ultimate destination for the latest games and exclusive deals. Play without limits!
+        </p>
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search for games..."
+            id="search-bar"
+          />
+          <button class="btn" onclick="searchGames()">SEARCH NOW</button>
+        </div>
+      </div>
+      <div class="main-image-right">
+        <img src="photos/banner-image.jpg" alt="Gaming Banner" />
+      </div>
+    </main>
+
+    <!-- Trending Games -->
+    <section class="trending-container">
+      <span >Trending</span>
+      <div class="trending-header">
+        <h1>Trending Games</h1>
+        <button class="btn">View All</button>
+      </div>
+      <div class="trending-cards">
+        <div class="card">
+          <img class="thumb" src="photos/trending-01.jpg" alt="The Witcher 3" />
+          <div class="card-info">
+            <h3>The Witcher 3</h3>
+            <p>
+              Embark on an epic adventure in a vast open world full of monsters
+              and magic.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-01.jpg" alt="The Witcher 3" />
+          <div class="card-info">
+            <h3>The Witcher 3</h3>
+            <p>
+              Embark on an epic adventure in a vast open world full of monsters
+              and magic.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-01.jpg" alt="The Witcher 3" />
+          <div class="card-info">
+            <h3>The Witcher 3</h3>
+            <p>
+              Embark on an epic adventure in a vast open world full of monsters
+              and magic.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-01.jpg" alt="The Witcher 3" />
+          <div class="card-info">
+            <h3>The Witcher 3</h3>
+            <p>
+              Embark on an epic adventure in a vast open world full of monsters
+              and magic.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-01.jpg" alt="The Witcher 3" />
+          <div class="card-info">
+            <h3>The Witcher 3</h3>
+            <p>
+              Embark on an epic adventure in a vast open world full of monsters
+              and magic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<hr>
+
+    <!-- New Releases Section -->
+    <section class="new-releases-container">
+      <span >New Releases</span>
+      <div class="new-releases-header">
+        <h1>Latest Games</h1>
+        <button class="btn">View All</button>
+      </div>
+      <div class="new-releases-cards">
+        <div class="card">
+          <img class="thumb" src="photos/trending-02.jpg" alt="Elden Ring" />
+          <div class="card-info">
+            <h3>Elden Ring</h3>
+            <p>
+              Experience a breathtaking fantasy world created by FromSoftware.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-02.jpg" alt="Elden Ring" />
+          <div class="card-info">
+            <h3>Elden Ring</h3>
+            <p>
+              Experience a breathtaking fantasy world created by FromSoftware.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-02.jpg" alt="Elden Ring" />
+          <div class="card-info">
+            <h3>Elden Ring</h3>
+            <p>
+              Experience a breathtaking fantasy world created by FromSoftware.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-02.jpg" alt="Elden Ring" />
+          <div class="card-info">
+            <h3>Elden Ring</h3>
+            <p>
+              Experience a breathtaking fantasy world created by FromSoftware.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-02.jpg" alt="Elden Ring" />
+          <div class="card-info">
+            <h3>Elden Ring</h3>
+            <p>
+              Experience a breathtaking fantasy world created by FromSoftware.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<hr>
+
+    <!-- Popular Games Section -->
+    <section class="popular-games-container">
+      <span >Popular</span>
+      <div class="popular-games-header">
+        <h1>Most Played Games</h1>
+        <button class="btn">View All</button>
+      </div>
+      <div class="popular-games-cards">
+        <div class="card">
+          <img class="thumb" src="photos/trending-03.jpg" alt="Fortnite" />
+          <div class="card-info">
+            <h3>Fortnite</h3>
+            <p>
+              Join the battle and be the last one standing in this exciting
+              Battle Royale.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-03.jpg" alt="Fortnite" />
+          <div class="card-info">
+            <h3>Fortnite</h3>
+            <p>
+              Join the battle and be the last one standing in this exciting
+              Battle Royale.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-03.jpg" alt="Fortnite" />
+          <div class="card-info">
+            <h3>Fortnite</h3>
+            <p>
+              Join the battle and be the last one standing in this exciting
+              Battle Royale.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-03.jpg" alt="Fortnite" />
+          <div class="card-info">
+            <h3>Fortnite</h3>
+            <p>
+              Join the battle and be the last one standing in this exciting
+              Battle Royale.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="thumb" src="photos/trending-03.jpg" alt="Fortnite" />
+          <div class="card-info">
+            <h3>Fortnite</h3>
+            <p>
+              Join the battle and be the last one standing in this exciting
+              Battle Royale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-title">
+        <span>© 2025 Lugx Store. All rights reserved.</span>
+      </p>
+      <div class="social-icons">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/ali-abdelazim-a40941176/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://github.com/aliabdelazim7"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" href="https://www.facebook.com/3li3wadii"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/ali_abdelazim7/">
+          <i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
