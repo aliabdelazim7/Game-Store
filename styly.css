@@ -189,3 +189,101 @@ main {
   color: tomato;
   transition: 0.7s ease;
 }
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  main img {
+    width: 80%;
+  }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 5px;
+  }
+
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main p {
+    font-size: 0.9rem;
+  }
+
+  main img {
+    width: 90%;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small screens (320px and below) */
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+
+  header {
+    padding: 5px;
+  }
+
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 0.8rem;
+  }
+
+  main img {
+    width: 100%;
+  }
+
+  footer {
+    padding: 5px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
