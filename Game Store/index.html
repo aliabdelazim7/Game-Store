@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUGX Gaming Store - Premium Gaming Experience</title>
+  <meta name="description" content="Discover the best gaming experience with trending games, exclusive deals, and premium gaming accessories at LUGX Gaming Store.">
+  <meta name="keywords" content="gaming store, video games, trending games, gaming accessories, online gaming">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styly.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-overlay">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <img src="photos/logo.png" alt="LUGX Gaming">
+      </div>
+      <div class="loading-spinner"></div>
+      <p>Loading Gaming Experience...</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="photos/logo.png" alt="LUGX Gaming Store">
+      </div>
+      
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#games" class="nav-link">
+          <i class="fas fa-gamepad"></i>
+          <span>Games</span>
+        </a>
+        <a href="#deals" class="nav-link">
+          <i class="fas fa-tags"></i>
+          <span>Deals</span>
+        </a>
+        <a href="#about" class="nav-link">
+          <i class="fas fa-info-circle"></i>
+          <span>About</span>
+        </a>
+        <a href="#contact" class="nav-link">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="cart-btn" id="cartBtn">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="signin-btn">
+          <i class="fas fa-user"></i>
+          <span>SIGN IN</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search for games, consoles, accessories..." id="searchInput">
+          <button class="search-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="search-suggestions" id="searchSuggestions">
+          <div class="suggestion-item">
+            <i class="fas fa-gamepad"></i>
+            <span>Popular Games</span>
+          </div>
+          <div class="suggestion-item">
+            <i class="fas fa-tv"></i>
+            <span>Gaming Consoles</span>
+          </div>
+          <div class="suggestion-item">
+            <i class="fas fa-headphones"></i>
+            <span>Accessories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background">
+      <div class="hero-particles"></div>
+    </div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          <span>Premium Gaming Store</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="hero-title-main">BEST GAMING</span>
+          <span class="hero-title-sub">EXPERIENCE EVER!</span>
+        </h1>
+        
+        <p class="hero-description">
+          Discover the ultimate gaming destination with exclusive deals, trending games, 
+          and premium gaming accessories. Join millions of gamers worldwide!
+        </p>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">50K+</span>
+            <span class="stat-label">Happy Gamers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">Games Available</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+        
+        <div class="hero-actions">
+          <button class="cta-btn primary">
+            <i class="fas fa-play"></i>
+            <span>Explore Games</span>
+          </button>
+          <button class="cta-btn secondary">
+            <i class="fas fa-gift"></i>
+            <span>View Deals</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-image-container">
+          <img src="photos/banner-image.jpg" alt="Gaming Banner" class="hero-image">
+          <div class="hero-image-overlay">
+            <div class="floating-card">
+              <i class="fas fa-fire"></i>
+              <span>Trending Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Gaming Categories</h2>
+        <p>Explore different types of games and entertainment</p>
+      </div>
+      
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h3>Action Games</h3>
+          <p>Thrilling adventures and epic battles</p>
+          <span class="category-count">150+ Games</span>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-chess"></i>
+          </div>
+          <h3>Strategy Games</h3>
+          <p>Test your tactical skills</p>
+          <span class="category-count">80+ Games</span>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Racing Games</h3>
+          <p>High-speed excitement</p>
+          <span class="category-count">60+ Games</span>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </div>
+          <h3>Puzzle Games</h3>
+          <p>Challenge your mind</p>
+          <span class="category-count">120+ Games</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Games Section -->
+  <section class="games-section trending" id="games">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="fas fa-fire"></i>
+          <span>Trending</span>
+        </div>
+        <h2>Trending Games</h2>
+        <p>Most popular games this week</p>
+      </div>
+      
+      <div class="games-grid" id="trendingGames">
+        <div class="game-card" data-game="witcher3">
+          <div class="game-image">
+            <img src="photos/trending-01.jpg" alt="The Witcher 3">
+            <div class="game-overlay">
+              <div class="game-rating">
+                <i class="fas fa-star"></i>
+                <span>9.8</span>
+              </div>
+              <div class="game-price">
+                <span class="original-price">$59.99</span>
+                <span class="current-price">$39.99</span>
+              </div>
+            </div>
+            <div class="game-actions">
+              <button class="action-btn wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
+              <button class="action-btn cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="action-btn quick-view">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="game-info">
+            <h3>The Witcher 3: Wild Hunt</h3>
+            <p>Embark on an epic adventure in a vast open world full of monsters and magic.</p>
+            <div class="game-tags">
+              <span class="tag">RPG</span>
+              <span class="tag">Open World</span>
+              <span class="tag">Fantasy</span>
+            </div>
+            <div class="game-meta">
+              <span class="platform">
+                <i class="fab fa-windows"></i>
+                <i class="fab fa-playstation"></i>
+                <i class="fab fa-xbox"></i>
+              </span>
+              <span class="release-date">2015</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-card" data-game="eldenring">
+          <div class="game-image">
+            <img src="photos/trending-02.jpg" alt="Elden Ring">
+            <div class="game-overlay">
+              <div class="game-rating">
+                <i class="fas fa-star"></i>
+                <span>9.9</span>
+              </div>
+              <div class="game-price">
+                <span class="current-price">$59.99</span>
+              </div>
+            </div>
+            <div class="game-actions">
+              <button class="action-btn wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
+              <button class="action-btn cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="action-btn quick-view">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="game-info">
+            <h3>Elden Ring</h3>
+            <p>Experience a breathtaking fantasy world created by FromSoftware.</p>
+            <div class="game-tags">
+              <span class="tag">Action RPG</span>
+              <span class="tag">Souls-like</span>
+              <span class="tag">Fantasy</span>
+            </div>
+            <div class="game-meta">
+              <span class="platform">
+                <i class="fab fa-windows"></i>
+                <i class="fab fa-playstation"></i>
+                <i class="fab fa-xbox"></i>
+              </span>
+              <span class="release-date">2022</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-card" data-game="fortnite">
+          <div class="game-image">
+            <img src="photos/trending-03.jpg" alt="Fortnite">
+            <div class="game-overlay">
+              <div class="game-rating">
+                <i class="fas fa-star"></i>
+                <span>8.5</span>
+              </div>
+              <div class="game-price">
+                <span class="current-price">Free</span>
+              </div>
+            </div>
+            <div class="game-actions">
+              <button class="action-btn wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
+              <button class="action-btn cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="action-btn quick-view">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="game-info">
+            <h3>Fortnite</h3>
+            <p>Join the battle and be the last one standing in this exciting Battle Royale.</p>
+            <div class="game-tags">
+              <span class="tag">Battle Royale</span>
+              <span class="tag">Multiplayer</span>
+              <span class="tag">Free-to-Play</span>
+            </div>
+            <div class="game-meta">
+              <span class="platform">
+                <i class="fab fa-windows"></i>
+                <i class="fab fa-playstation"></i>
+                <i class="fab fa-xbox"></i>
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-android"></i>
+              </span>
+              <span class="release-date">2017</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-card" data-game="cyberpunk">
+          <div class="game-image">
+            <img src="photos/game 2.jpg" alt="Cyberpunk 2077">
+            <div class="game-overlay">
+              <div class="game-rating">
+                <i class="fas fa-star"></i>
+                <span>8.2</span>
+              </div>
+              <div class="game-price">
+                <span class="original-price">$59.99</span>
+                <span class="current-price">$29.99</span>
+              </div>
+            </div>
+            <div class="game-actions">
+              <button class="action-btn wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
+              <button class="action-btn cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="action-btn quick-view">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="game-info">
+            <h3>Cyberpunk 2077</h3>
+            <p>An open-world action-adventure story set in Night City.</p>
+            <div class="game-tags">
+              <span class="tag">RPG</span>
+              <span class="tag">Cyberpunk</span>
+              <span class="tag">Open World</span>
+            </div>
+            <div class="game-meta">
+              <span class="platform">
+                <i class="fab fa-windows"></i>
+                <i class="fab fa-playstation"></i>
+                <i class="fab fa-xbox"></i>
+              </span>
+              <span class="release-date">2020</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="game-card" data-game="minecraft">
+          <div class="game-image">
+            <img src="photos/game 3.jpg" alt="Minecraft">
+            <div class="game-overlay">
+              <div class="game-rating">
+                <i class="fas fa-star"></i>
+                <span>9.3</span>
+              </div>
+              <div class="game-price">
+                <span class="current-price">$26.95</span>
+              </div>
+            </div>
+            <div class="game-actions">
+              <button class="action-btn wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
+              <button class="action-btn cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="action-btn quick-view">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="game-info">
+            <h3>Minecraft</h3>
+            <p>Create, explore, and survive in a blocky 3D world.</p>
+            <div class="game-tags">
+              <span class="tag">Sandbox</span>
+              <span class="tag">Survival</span>
+              <span class="tag">Creative</span>
+            </div>
+            <div class="game-meta">
+              <span class="platform">
+                <i class="fab fa-windows"></i>
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-android"></i>
+              </span>
+              <span class="release-date">2011</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-footer">
+        <button class="view-all-btn">
+          <span>View All Trending Games</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Releases Section -->
+  <section class="games-section new-releases">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="fas fa-rocket"></i>
+          <span>New Releases</span>
+        </div>
+        <h2>Latest Games</h2>
+        <p>Fresh games just released</p>
+      </div>
+      
+      <div class="games-grid" id="newReleases">
+        <!-- Similar game cards structure as trending but with different games -->
+        <div class="game-card" data-game="spiderman2">
+          <div class="game-image">
+            <img src="photos/game 4.jpg" alt="Spider-Man 2">
+            <div class="game-overlay">
+              <div class="game-rating">
+                <i class="fas fa-star"></i>
+                <span>9.1</span>
+              </div>
+              <div class="game-price">
+                <span class="current-price">$69.99</span>
+              </div>
+            </div>
+            <div class="game-actions">
+              <button class="action-btn wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
+              <button class="action-btn cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <button class="action-btn quick-view">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="game-info">
+            <h3>Marvel's Spider-Man 2</h3>
+            <p>Swing through New York as both Peter Parker and Miles Morales.</p>
+            <div class="game-tags">
+              <span class="tag">Action</span>
+              <span class="tag">Adventure</span>
+              <span class="tag">Superhero</span>
+            </div>
+            <div class="game-meta">
+              <span class="platform">
+                <i class="fab fa-playstation"></i>
+              </span>
+              <span class="release-date">2023</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add more new release games here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section class="deals-section" id="deals">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="fas fa-tags"></i>
+          <span>Special Deals</span>
+        </div>
+        <h2>Hot Deals</h2>
+        <p>Limited time offers on popular games</p>
+      </div>
+      
+      <div class="deals-grid">
+        <div class="deal-card featured">
+          <div class="deal-badge">
+            <span>50% OFF</span>
+          </div>
+          <div class="deal-image">
+            <img src="photos/game 5.jpg" alt="Special Deal">
+          </div>
+          <div class="deal-content">
+            <h3>Gaming Bundle Pack</h3>
+            <p>Get 5 popular games for the price of 2!</p>
+            <div class="deal-price">
+              <span class="original-price">$199.99</span>
+              <span class="deal-price-current">$99.99</span>
+            </div>
+            <div class="deal-timer">
+              <span>Ends in:</span>
+              <div class="timer" id="dealTimer">
+                <span class="time-unit">
+                  <span class="time-value">02</span>
+                  <span class="time-label">Days</span>
+                </span>
+                <span class="time-unit">
+                  <span class="time-value">18</span>
+                  <span class="time-label">Hours</span>
+                </span>
+                <span class="time-unit">
+                  <span class="time-value">45</span>
+                  <span class="time-label">Minutes</span>
+                </span>
+              </div>
+            </div>
+            <button class="deal-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Buy Now</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Updated</h2>
+        <p>Get the latest gaming news, deals, and updates delivered to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="form-group">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+              <span>Subscribe</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="photos/logo.png" alt="LUGX Gaming">
+          </div>
+          <p>Your ultimate destination for gaming excellence. Discover, play, and connect with gamers worldwide.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Gaming Street, Digital City</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>support@lugxgaming.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 LUGX Gaming Store. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="close-cart" id="closeCart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-amount">$0.00</span>
+      </div>
+      <button class="checkout-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Checkout</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal" id="quickViewModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Game Details</h3>
+        <button class="close-modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Game details will be dynamically loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification -->
+  <div class="notification" id="notification">
+    <div class="notification-content">
+      <i class="notification-icon"></i>
+      <span class="notification-message"></span>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
